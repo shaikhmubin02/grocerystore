@@ -375,7 +375,7 @@ export function Homepage() {
   )
 }
 
-function BananaIcon(props) {
+function BananaIcon(props:any) {
   return (
     <svg
       {...props}
@@ -396,7 +396,7 @@ function BananaIcon(props) {
 }
 
 
-function CarrotIcon(props) {
+function CarrotIcon(props : any) {
   return (
     <svg
       {...props}
@@ -418,7 +418,7 @@ function CarrotIcon(props) {
 }
 
 
-function MailIcon(props) {
+function MailIcon(props : any) {
   return (
     <svg
       {...props}
@@ -439,7 +439,7 @@ function MailIcon(props) {
 }
 
 
-function MapPinIcon(props) {
+function MapPinIcon(props : any) {
   return (
     <svg
       {...props}
@@ -460,7 +460,7 @@ function MapPinIcon(props) {
 }
 
 
-function MenuIcon(props) {
+function MenuIcon(props : any) {
   return (
     <svg
       {...props}
@@ -482,7 +482,7 @@ function MenuIcon(props) {
 }
 
 
-function MilkIcon(props) {
+function MilkIcon(props : any) {
   return (
     <svg
       {...props}
@@ -504,7 +504,7 @@ function MilkIcon(props) {
 }
 
 
-function PhoneIcon(props) {
+function PhoneIcon(props : any) {
   return (
     <svg
       {...props}
@@ -524,7 +524,7 @@ function PhoneIcon(props) {
 }
 
 
-function ShoppingBasketIcon(props) {
+function ShoppingBasketIcon(props : any) {
   return (
     <svg
       {...props}
@@ -550,7 +550,7 @@ function ShoppingBasketIcon(props) {
 }
 
 
-function ShoppingCartIcon(props) {
+function ShoppingCartIcon(props : any) {
   return (
     <svg
       {...props}
@@ -572,7 +572,7 @@ function ShoppingCartIcon(props) {
 }
 
 
-function WheatIcon(props) {
+function WheatIcon(props : any) {
   return (
     <svg
       {...props}
@@ -599,7 +599,7 @@ function WheatIcon(props) {
 }
 
 
-function XIcon(props) {
+function XIcon(props : any) {
   return (
     <svg
       {...props}
