@@ -23,14 +23,29 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
+
+'use client'
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { useState } from "react"
 
 export function Homepage() {
+  
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isCartPopupOpen, setIsCartPopupOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
+  const toggleCartPopup = () => {
+    setIsCartPopupOpen(!isCartPopupOpen)
+  }
+  
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className="bg-background border-b px-4 md:px-6 py-4 flex items-center justify-between">
+      {/* <header className="bg-background border-b px-4 md:px-6 py-4 flex items-center justify-between">
         <Link href="#" className="flex items-center gap-2" prefetch={false}>
           <ShoppingBasketIcon className="h-6 w-6" />
           <span className="font-semibold text-lg">Adnan Grocery</span>
@@ -58,6 +73,78 @@ export function Homepage() {
           <MenuIcon className="h-5 w-5" />
           <span className="sr-only">Toggle menu</span>
         </Button>
+      </header> */} 
+      <header className="bg-background border-b px-4 md:px-6 py-4 flex items-center justify-between">
+        <Link href="#" className="flex items-center gap-2" prefetch={false}>
+          <ShoppingBasketIcon className="h-6 w-6" />
+          <span className="font-semibold text-lg">Acme Grocery</span>
+        </Link>
+        <div className="relative">
+          <Button variant="outline" size="sm" className="md:hidden" onClick={toggleMenu}>
+            <MenuIcon className="h-5 w-5" />
+            <span className="sr-only">Toggle menu</span>
+          </Button>
+          {isMenuOpen && (
+            <Card className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-background shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <nav className="flex flex-col gap-6 p-4">
+                <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+                  Home
+                </Link>
+                <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+                  Products
+                </Link>
+                <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+                  About
+                </Link>
+                <div className="relative">
+                  <Link
+                    href="#"
+                    className="inline-flex items-center gap-2 text-sm font-medium hover:underline underline-offset-4"
+                    onClick={toggleCartPopup}
+                    prefetch={false}
+                  >
+                    <ShoppingCartIcon className="h-5 w-5" />
+                    Cart
+                  </Link>
+                  {isCartPopupOpen && (
+                    <div className="absolute bottom-0 left-0 transform translate-y-full bg-primary text-primary-foreground px-2 py-1 rounded-md text-xs font-medium">
+                      Feature coming soon...
+                    </div>
+                  )}
+                </div>
+                
+              </nav>
+            </Card>
+            
+          )}
+          <nav className="hidden md:flex items-center gap-6">
+          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+            Home
+          </Link>
+          <Link href="#products" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+            Products
+          </Link>
+          <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+            About
+          </Link>
+          <div className="relative">
+            <Link
+              href="#"
+              className="inline-flex items-center gap-2 text-sm font-medium hover:underline underline-offset-4"
+              onClick={toggleCartPopup}
+              prefetch={false}
+            >
+              <ShoppingCartIcon className="h-5 w-5" />
+              Cart
+            </Link>
+            {isCartPopupOpen && (
+              <div className="absolute bottom-0 left-0 transform translate-y-full bg-primary text-primary-foreground px-2 py-1 rounded-md text-xs font-medium">
+                Feature coming soon...
+              </div>
+            )}
+          </div>
+        </nav>
+        </div>
       </header>
       <main className="flex-1">
         <section className="bg-muted py-12 md:py-24">
@@ -605,7 +692,7 @@ function XIcon(props : any) {
       {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
-      height="24"
+      height="24"  
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
