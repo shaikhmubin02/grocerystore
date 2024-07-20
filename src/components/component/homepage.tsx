@@ -1,4 +1,5 @@
 'use client'
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -8,6 +9,7 @@ export function Homepage() {
   
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCartPopupOpen, setIsCartPopupOpen] = useState(false);
+  const [showMoreCards, setShowMoreCards] = useState(false); 
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -15,6 +17,10 @@ export function Homepage() {
 
   const toggleCartPopup = () => {
     setIsCartPopupOpen(!isCartPopupOpen)
+  }
+
+  const toggleShowMoreCards = () => {
+    setShowMoreCards(!showMoreCards)
   }
   
   return (
@@ -332,6 +338,99 @@ export function Homepage() {
                   </div>
                 </CardContent>
               </Card>
+              {showMoreCards && (
+                <>
+                  <Card>
+                    <img
+                      src="/apple.jpg"
+                      alt="Product 6"
+                      width={600}
+                      height={400}
+                      className="rounded-t-lg w-full object-cover aspect-[3/2]"
+                    />
+                    <CardContent className="p-4">
+                      <h3 className="text-lg font-semibold">Organic Spinach</h3>
+                      <p className="text-muted-foreground text-sm">Nutrient-packed spinach.</p>
+                      <div className="mt-2 flex items-center justify-between">
+                        <div>
+                          <span className="font-semibold">MRP: ₹69</span>
+                          <span className="text-muted-foreground line-through ml-2">₹79</span>
+                          <span className="text-primary font-semibold ml-2">10% OFF</span>
+                        </div>
+                        {/* <Button size="sm">Add to Cart</Button> */}
+                      </div>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <img
+                      src="/barocoli.jpg"
+                      alt="Product 7"
+                      width={600}
+                      height={400}
+                      className="rounded-t-lg w-full object-cover aspect-[3/2]"
+                    />
+                    <CardContent className="p-4">
+                      <h3 className="text-lg font-semibold">Fresh Blueberries</h3>
+                      <p className="text-muted-foreground text-sm">Plump and juicy blueberries.</p>
+                      <div className="mt-2 flex items-center justify-between">
+                        <div>
+                          <span className="font-semibold">MRP: ₹129</span>
+                          <span className="text-muted-foreground line-through ml-2">₹139</span>
+                          <span className="text-primary font-semibold ml-2">10% OFF</span>
+                        </div>
+                        {/* <Button size="sm">Add to Cart</Button> */}
+                      </div>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <img
+                      src="/carrots.jpg"
+                      alt="Product 8"
+                      width={600}
+                      height={400}
+                      className="rounded-t-lg w-full object-cover aspect-[3/2]"
+                    />
+                    <CardContent className="p-4">
+                      <h3 className="text-lg font-semibold">Organic Kale</h3>
+                      <p className="text-muted-foreground text-sm">Nutrient-dense kale.</p>
+                      <div className="mt-2 flex items-center justify-between">
+                        <div>
+                          <span className="font-semibold">MRP: ₹49</span>
+                          <span className="text-muted-foreground line-through ml-2">₹59</span>
+                          <span className="text-primary font-semibold ml-2">10% OFF</span>
+                        </div>
+                        {/* <Button size="sm">Add to Cart</Button> */}
+                      </div>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <img
+                      src="/Strawberries.jpg"
+                      alt="Product 4"
+                      width={600}
+                      height={400}
+                      className="rounded-t-lg w-full object-cover aspect-[3/2]"
+                    />
+                    <CardContent className="p-4">
+                      <h3 className="text-lg font-semibold">Fresh Strawberries</h3>
+                      <p className="text-muted-foreground text-sm">Sweet and juicy strawberries.</p>
+                      <div className="mt-2 flex items-center justify-between">
+                        <div>
+                          <span className="font-semibold">MRP: ₹149</span>
+                          <span className="text-muted-foreground line-through ml-2">₹159</span>
+                          <span className="text-primary font-semibold ml-2">10% OFF</span>
+                        </div>
+                        {/* <Button size="sm">Add to Cart</Button> */}
+                      </div>
+                    </CardContent>
+                  </Card>
+                </>
+              )}
+              {!showMoreCards && (
+                <Button variant="outline" size="sm" className="col-span-full" onClick={toggleShowMoreCards}>
+                  Show More Products
+                </Button>
+              )}
             </div>
           </div>
         </section>
