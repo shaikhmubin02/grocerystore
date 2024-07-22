@@ -145,7 +145,7 @@ export function Homepage() {
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-2 text-muted-foreground">
                   <div className="flex items-center gap-2">
                     <PhoneIcon className="h-5 w-5" />
-                    <span>+1 (123) 456-7890</span>
+                    <span>+91 70698 98533</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPinIcon className="h-5 w-5 text-muted-foreground" />
@@ -496,11 +496,11 @@ export function Homepage() {
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <MailIcon className="h-5 w-5 text-muted-foreground" />
-                  <span className="text-muted-foreground">info@IsajiMart.com</span>
+                  <span className="text-muted-foreground">isajimartinfo@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <PhoneIcon className="h-5 w-5 text-muted-foreground" />
-                  <span className="text-muted-foreground">+1 (123) 456-7890</span>
+                  <span className="text-muted-foreground">+91 70698 98533</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPinIcon className="h-5 w-5 text-muted-foreground" />
