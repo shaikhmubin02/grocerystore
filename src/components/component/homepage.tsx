@@ -28,7 +28,7 @@ export function Homepage() {
       {/* <header className="bg-background border-b px-4 md:px-6 py-4 flex items-center justify-between">
         <Link href="#" className="flex items-center gap-2" prefetch={false}>
           <ShoppingBasketIcon className="h-6 w-6" />
-          <span className="font-semibold text-lg">Adnan Grocery</span>
+          <span className="font-semibold text-lg">Isaji Mart</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
@@ -57,7 +57,7 @@ export function Homepage() {
       <header className="bg-background border-b px-4 md:px-6 py-4 flex items-center justify-between">
         <Link href="#" className="flex items-center gap-2" prefetch={false}>
           <ShoppingBasketIcon className="h-6 w-6" />
-          <span className="font-semibold text-lg">Adnan Grocery</span>
+          <span className="font-semibold text-lg">Isaji Mart</span>
         </Link>
         <div className="relative">
           <Button variant="outline" size="sm" className="md:hidden" onClick={toggleMenu}>
@@ -486,9 +486,9 @@ export function Homepage() {
               className="mx-auto aspect-square object-cover rounded-lg"
             />
             <div className="space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">About Adnan Grocery</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">About Isaji Mart</h2>
               <p className="text-muted-foreground md:text-xl">
-                At Adnan Grocery, we are passionate about providing our customers with the freshest and highest-quality
+                At Isaji Mart, we are passionate about providing our customers with the freshest and highest-quality
                 produce. Our family-owned business has been serving the community for over 50 years, and we take pride
                 in our commitment to sustainability and supporting local farmers. Visit our store to pick up your
                 groceries today.
@@ -496,7 +496,7 @@ export function Homepage() {
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <MailIcon className="h-5 w-5 text-muted-foreground" />
-                  <span className="text-muted-foreground">info@adnangrocery.com</span>
+                  <span className="text-muted-foreground">info@IsajiMart.com</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <PhoneIcon className="h-5 w-5 text-muted-foreground" />
@@ -520,7 +520,7 @@ export function Homepage() {
       </main>
       <footer className="bg-muted border-t px-4 md:px-6 py-6 text-sm">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-muted-foreground">&copy; 2024 Adnan Grocery. All rights reserved.</p>
+          <p className="text-muted-foreground">&copy; 2024 Isaji Mart. All rights reserved.</p>
           <nav className="flex items-center gap-4">
             <Link href="#" className="text-muted-foreground hover:underline underline-offset-4" prefetch={false}>
               Terms of Service
