@@ -25,7 +25,7 @@ const Products: React.FC = () => {
             alt={product.alt}
             width={600}
             height={400}
-            className="rounded-t-lg w-full object-cover aspect-[3/2]"
+            className="rounded-t-lg w-full object-cover " //aspect-[3/2]
           />
           <CardContent className="p-4">
             <h3 className="text-lg font-semibold">{product.name}</h3>
