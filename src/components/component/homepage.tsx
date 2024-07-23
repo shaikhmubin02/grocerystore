@@ -29,8 +29,10 @@ export function Homepage() {
     
       <header className="bg-background border-b px-4 md:px-6 py-4 flex items-center justify-between">
         <Link href="#" className="flex items-center gap-2" prefetch={false}>
-          <ShoppingBasketIcon className="h-6 w-6" />
-          <span className="font-semibold text-lg">Isaji Mart</span>
+        <img src="logoisajimart.jpg" alt="" height={1} width={30}/>
+        <img src="imgisajimart.jpg" alt="" height={5} width={100}/>
+          {/* <ShoppingBasketIcon className="h-6 w-6" /> */}
+          {/* <span className="font-semibold text-lg">Isaji Mart</span> */}
         </Link>
         <div className="relative">
           <Button variant="outline" size="sm" className="md:hidden" onClick={toggleMenu}>
@@ -120,15 +122,15 @@ export function Homepage() {
                     <PhoneIcon className="h-5 w-5" />
                     <span>+91 70698 98533</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <MapPinIcon className="h-5 w-5 text-muted-foreground" />
-                    <span>123 Main St, Anytown USA</span>
-                  </div>
                 </div>
+              </div>
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <MapPinIcon className="h-5 w-5 text-muted-foreground" />
+                <span>Shop No. 9, Ayman-52, Nr.Zainab Avenue, TP85, 100ft Road, Serkhej Road, Ahmedabad-380055</span>
               </div>
             </div>
             <img
-              src="/groceryhome.avif"
+              src="/main.jpg"
               alt="Hero Image"
               width={500}
               height={600}
@@ -207,7 +209,7 @@ export function Homepage() {
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <MailIcon className="h-5 w-5 text-muted-foreground" />
-                  <span className="text-muted-foreground">isajimartinfo@gmail.com</span>
+                  <span className="text-muted-foreground">isajimart24@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <PhoneIcon className="h-5 w-5 text-muted-foreground" />
@@ -215,7 +217,7 @@ export function Homepage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPinIcon className="h-5 w-5 text-muted-foreground" />
-                  <span className="text-muted-foreground">123 Main St, Anytown USA</span>
+                  <span className="text-muted-foreground">Shop No. 9, Ayman-52, Nr.Zainab Avenue, TP85, 100ft Road, Serkhej Road, Ahmedabad-380055</span>
                 </div>
               </div>
               <Link
