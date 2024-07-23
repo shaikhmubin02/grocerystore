@@ -4,7 +4,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { useState } from "react"
-import Products from "./products"
+import Products from "./productcard"
 
 export function Homepage() {
   
