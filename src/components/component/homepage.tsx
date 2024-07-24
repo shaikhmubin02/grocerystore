@@ -3,8 +3,12 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Label } from "@/components/ui/label"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
 import { useState } from "react"
 import Products from "./productcard"
+import Inquiryform from "./inquiryform"
 
 export function Homepage() {
   
@@ -124,8 +128,8 @@ export function Homepage() {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <MapPinIcon className="h-5 w-5 text-muted-foreground" />
+              <div className="flex gap-2 text-muted-foreground">
+                <MapPinIcon className="h-6 w-6 text-muted-foreground" />
                 <span>Shop No. 9, Ayman-52, Nr.Zainab Avenue, TP85, 100ft Road, Serkhej Road, Ahmedabad-380055</span>
               </div>
             </div>
@@ -190,14 +194,19 @@ export function Homepage() {
           </div>
         </section>
         <section id="about" className="py-12 md:py-24">
-          <div className="container px-4 md:px-6 grid md:grid-cols-2 gap-8 items-center">
-            <img
+          <div className="container px-4 md:px-6 grid md:grid-cols-2 gap-20 ">
+            <div className="space-y-4 ">
+                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Have a question?</h2>
+                <p className="text-muted-foreground md:text-xl">Fill out the form below and we'll get back to you.</p>
+                <Inquiryform />
+              </div>
+            {/* <img
               src="/gs.jpg"
               alt="About Image"
               width={600}
               height={600}
               className="mx-auto aspect-square object-cover rounded-lg"
-            />
+            /> */}
             <div className="space-y-4">
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">About Isaji Mart</h2>
               <p className="text-muted-foreground md:text-xl">
@@ -215,18 +224,19 @@ export function Homepage() {
                   <PhoneIcon className="h-5 w-5 text-muted-foreground" />
                   <span className="text-muted-foreground">+91 70698 98533</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <MapPinIcon className="h-5 w-5 text-muted-foreground" />
+                <div className="flex gap-2">
+                  <MapPinIcon className="h-6 w-6 text-muted-foreground" />
                   <span className="text-muted-foreground">Shop No. 9, Ayman-52, Nr.Zainab Avenue, TP85, 100ft Road, Serkhej Road, Ahmedabad-380055</span>
                 </div>
               </div>
-              <Link
+              {/* <Link
                 href="#"
                 className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                 prefetch={false}
               >
                 Learn More
-              </Link>
+              </Link> */}
+              
             </div>
           </div>
         </section>
