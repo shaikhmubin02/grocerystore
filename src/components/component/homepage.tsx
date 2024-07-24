@@ -197,7 +197,7 @@ export function Homepage() {
           <div className="container px-4 md:px-6 grid md:grid-cols-2 gap-20 ">
             <div className="space-y-4 ">
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Have a question?</h2>
-                <p className="text-muted-foreground md:text-xl">Fill out the form below and we'll get back to you.</p>
+                <p className="text-muted-foreground md:text-xl">Fill out the form below and we&apos;ll get back to you.</p>
                 <Inquiryform />
               </div>
             {/* <img
