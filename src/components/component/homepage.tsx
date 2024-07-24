@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { useState } from "react"
 import Products from "./productcard"
 import Inquiryform from "./inquiryform"
+import Image from 'next/image';
 
 export function Homepage() {
   
@@ -33,8 +34,8 @@ export function Homepage() {
     
       <header className="bg-background border-b px-4 md:px-6 py-4 flex items-center justify-between">
         <Link href="#" className="flex items-center gap-2" prefetch={false}>
-        <img src="logoisajimart.jpg" alt="" height={1} width={30}/>
-        <img src="imgisajimart.jpg" alt="" height={5} width={100}/>
+        <Image src="/logoisajimart.jpg" alt="" height={1} width={30}/>
+        <Image src="/imgisajimart.jpg" alt="" height={5} width={100}/>
           {/* <ShoppingBasketIcon className="h-6 w-6" /> */}
           {/* <span className="font-semibold text-lg">Isaji Mart</span> */}
         </Link>
@@ -133,7 +134,7 @@ export function Homepage() {
                 <span>Shop No. 9, Ayman-52, Nr.Zainab Avenue, TP85, 100ft Road, Serkhej Road, Ahmedabad-380055</span>
               </div>
             </div>
-            <img
+            <Image
               src="/main.jpg"
               alt="Hero Image"
               width={500}
@@ -200,7 +201,7 @@ export function Homepage() {
                 <p className="text-muted-foreground md:text-xl">Fill out the form below and we&apos;ll get back to you.</p>
                 <Inquiryform />
               </div>
-            {/* <img
+            {/* <Image
               src="/gs.jpg"
               alt="About Image"
               width={600}

@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from '../ui/button';
-import { products } from '@/data/products';  // Correct import statement
+import { products } from '@/data/products'; 
+import Image from 'next/image';
 
 const Products: React.FC = () => { 
 
@@ -20,7 +21,7 @@ const Products: React.FC = () => {
     <div className="grid grid-cols-1 sm: grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
       {products.slice(0, showMoreCards ? products.length : 8).map((product, index) => (
         <Card key={index}>
-          <img
+          <Image
             src={product.image}
             alt={product.alt}
             width={600}
