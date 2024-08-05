@@ -211,10 +211,7 @@ export function Homepage() {
             <div className="space-y-4">
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">About Isaji Mart</h2>
               <p className="text-muted-foreground md:text-xl">
-                At Isaji Mart, we are passionate about providing our customers with the freshest and highest-quality
-                produce. Our family-owned business has been serving the community for over 50 years, and we take pride
-                in our commitment to sustainability and supporting local farmers. Visit our store to pick up your
-                groceries today.
+              At Isaji Mart, we are passionate about providing our customers with the freshest and highest-quality produce. Our team meticulously selects each item to ensure that you receive only the best. We also prioritize sustainability, implementing eco-friendly practices throughout our operations. Visit our store to pick up your groceries today.
               </p>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
